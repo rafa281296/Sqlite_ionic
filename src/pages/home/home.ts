@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {	AdicionaClientePage }	from '../adiciona-cliente/adiciona-cliente';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,8 @@ export class HomePage {
 
   }
 
+  
+cadastrarCliente (){
+this.navCtrl.push(AdicionaClientePage);
+}
 }
